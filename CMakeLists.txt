@@ -49,7 +49,7 @@ set_target_properties(${TARGET_NAME} PROPERTIES EXPORT_NAME Base)
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 #Export the targets to a script
-install(EXPORT TestLibBase-targets
+install(EXPORT ${TARGET_NAME}-targets
   FILE
     TestLibBaseTargets.cmake
   NAMESPACE
